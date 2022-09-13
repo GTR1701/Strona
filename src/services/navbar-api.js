@@ -4,7 +4,7 @@ class NavbarApi {
             id: 1,
             content: 'O firmie'
         }, {
-            id: 1,
+            id: 2,
             content: 'Download'
         }];
     }
@@ -12,3 +12,5 @@ class NavbarApi {
         return this.btnContents;
     }
 }
+
+export default NavbarApi
