@@ -2,9 +2,10 @@
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1rem 1.2rem;
     text-decoration: none;
     font-size: 17px;
+    border-radius: 0.5rem;
 }
 
 .nav-bar-left {

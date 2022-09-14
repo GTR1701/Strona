@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/navbar/component.navbar';
 
-function Download({...props}) {
+function Kontakt({...props}) {
     return ( 
         <Navbar key={101} />
      );
 }
 
-export default Download;
+export default Kontakt;

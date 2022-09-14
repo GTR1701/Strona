@@ -3,7 +3,7 @@ import Navbar from '../../components/navbar/component.navbar';
 
 function Home({...props}) {
     return ( 
-        <Navbar />
+        <Navbar key={101} />
      );
 }
 

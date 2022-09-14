@@ -1,5 +1,5 @@
 import React from 'react'
-import './component.image.css'
+import './component.pic.css'
 
 function Image({image, ...props}) {
     return (

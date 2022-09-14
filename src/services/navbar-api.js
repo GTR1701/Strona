@@ -18,9 +18,17 @@ class NavbarApi {
             href: '/Kontakt',
             zdjecie: ''
         }];
+
+        this.images = [{
+            id: 101,
+            src: "LOGO-IRTEL-JPG-V3.jpg"
+        }];
     }
     getBtnContents = () => {
         return this.btnContents;
+    }
+    getImages = () => {
+        return this.images;
     }
 }
 

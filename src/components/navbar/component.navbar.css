@@ -7,3 +7,8 @@
     display: flex;
     justify-content: flex-start;
 }
+
+.navbar-logo {
+    width: 8,1834rem;
+    height: 3.375rem;
+}
