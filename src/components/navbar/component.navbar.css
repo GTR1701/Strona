@@ -3,3 +3,7 @@
     background: white;
     width: 93vw
 }
+.nav-bar-main {
+    display: flex;
+    justify-content: flex-start;
+}
