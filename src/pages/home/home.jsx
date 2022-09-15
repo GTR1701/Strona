@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from '../../components/navbar/component.navbar';
+import './home.css'
 
 function Home({...props}) {
-    return ( 
+    return (
         <Navbar key={101} />
      );
 }

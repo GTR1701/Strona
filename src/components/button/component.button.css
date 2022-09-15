@@ -5,7 +5,6 @@
     padding: 1rem 1.2rem;
     text-decoration: none;
     font-size: 17px;
-    border-radius: 0.5rem;
 }
 
 .nav-bar-left {
@@ -21,4 +20,8 @@
     animation-name: navbar;
     animation-duration: 0.35s;
     background: rgb(30, 185, 233);
+}
+
+.nav-bar-right {
+    float: right;
 }
