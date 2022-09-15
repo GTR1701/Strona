@@ -16,12 +16,17 @@ class NavbarApi {
             id: 4,
             content: 'Kontakt',
             href: '/Kontakt',
-            zdjecie: ''
         }];
 
         this.images = [{
             id: 101,
             src: "LOGO-IRTEL-JPG-V3.jpg"
+        }];
+
+        this.loginBtn = [{
+            id: 6,
+            content: "Zaloguj",
+            href: ""
         }];
     }
     getBtnContents = () => {
@@ -29,6 +34,9 @@ class NavbarApi {
     }
     getImages = () => {
         return this.images;
+    }
+    getLoginBtn = () => {
+        return this.loginBtn
     }
 }
 

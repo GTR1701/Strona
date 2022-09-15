@@ -1,7 +1,7 @@
 .nav-bar {
     overflow: hidden;
     background: white;
-    width: 93vw
+    width: 100vw
 }
 .nav-bar-main {
     display: flex;
@@ -9,6 +9,17 @@
 }
 
 .navbar-logo {
-    width: 8,1834rem;
-    height: 3.375rem;
+    height: 3.2085rem;
+}
+
+.nav-bar-right {
+    float: right;
+    margin-bottom: 0;
+}
+
+.login {
+    overflow: hidden;
+    background: white;
+    width: 7rem;
+    margin-bottom: 0;
 }
