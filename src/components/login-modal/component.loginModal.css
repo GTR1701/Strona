@@ -1,27 +1,38 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@keyframes login {
+    from{background: white;}
+    to{background: rgb(30, 185, 233);}
+}
+
 .login {
-    display: inline;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    width: 6rem;
-    height: 4vh;
-    padding: 1vw 1vh;
-    border: 0;
-    background-color: white;
+    display: inline !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    font-size: 17px !important;
+    width: 6rem !important;
+    height: 3rem !important;
+    padding-right: 0.6rem !important;
+    box-sizing: border-box !important;
+    border: 0 !important;
+    background-color: white !important;
+    color: black !important;
+}
+
+.login:hover {
+    animation-name: login !important;
+    animation-duration: 0.35s !important;
+    background: rgb(30, 185, 233) !important;
 }
 
 .nav-bar-left {
     float: left;
 }
 
-@keyframes navbar {
-    from{background: white;}
-    to{background: rgb(30, 185, 233);}
+.login-form {
+    align-items: center !important;
 }
 
-.login:hover {
-    animation-name: navbar;
-    animation-duration: 0.35s;
-    background: rgb(30, 185, 233);
+.login-btn {
+    background-color: rgb(30, 185, 233);
+    border: rgb(30, 185, 233);
 }

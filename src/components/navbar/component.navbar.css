@@ -2,7 +2,7 @@
     overflow: hidden;
     background: white;
     width: 100vw;
-    height: 5.5vh;
+    height: 3rem !important;
 }
 .nav-bar-main {
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 .navbar-logo {
-    height: 5.5vh;
+    height: 3rem;
 }
 
 .nav-bar-right {
