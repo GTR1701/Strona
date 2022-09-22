@@ -3,7 +3,9 @@ import './component.button.css'
 
 function NavButton({content: {id,content, href}, ...props}) {
     return (
-        <a href={href} className="nav-bar-button nav-bar-left">{content}</a>
+        <div className='btn-div'>
+            <a href={href} className="nav-bar-button nav-bar-left">{content}</a>
+        </div>
     );
 }
 

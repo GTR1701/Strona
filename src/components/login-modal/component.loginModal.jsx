@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './component.loginModal.css'
 
-
 function LoginModal() {
   const [show, setShow] = useState(false);
 
@@ -12,9 +11,11 @@ function LoginModal() {
 
   return (
     <>
-      <button className='login' onClick={handleShow}>
-        Zaloguj
-      </button>
+      <div className='login'>
+        <button className='login' onClick={handleShow}>
+          Zaloguj
+        </button>
+      </div>
 
       <Modal
         show={show}
@@ -23,18 +24,21 @@ function LoginModal() {
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title>Logowanie</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          I will not close if you click outside me. Don't even try to press
-          escape key.
+          <center>
+            <form className='login-form'>
+              <label htmlFor="Login">Login</label><br></br>
+              <input type="text" id='login' name='Login' /><br></br>
+              <label htmlFor="passwd">Hasło</label><br></br>
+              <input type="password" id='passwd' name='Hasło'/><br></br><br></br>
+              <Button variant="primary" className='login-btn' onClick={handleClose}>Zaloguj</Button><br></br>
+            </form>
+          </center>          
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary">Understood</Button>
-        </Modal.Footer>
+        {/* <Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
     </>
   );

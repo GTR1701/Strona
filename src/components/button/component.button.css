@@ -1,14 +1,14 @@
 .nav-bar-button {
     display: inline;
-    color: black;
-    text-align: center;
-    /* padding: 1rem 1.2rem; */
-    text-decoration: none;
-    font-size: 17px;
-    height: 4vh;
-    width: 6rem;
-    vertical-align: middle;
-    padding-top: 1.5vh;
+    color: black !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    font-size: 17px !important;
+    height: fit-content !important;
+    width: 6rem !important;
+    vertical-align: middle !important;
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.6rem;
 }
 
 .nav-bar-left {
@@ -26,6 +26,8 @@
     background: rgb(30, 185, 233);
 }
 
-.nav-bar-right {
-    float: right;
+.btn-div {
+    height:3rem;
+    display: inline;
+    width: fit-content;
 }
