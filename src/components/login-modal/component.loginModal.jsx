@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './component.loginModal.css'
+import Database from "../../services/database"
+
+
+const database = new Database();
 
 function LoginModal() {
   const [show, setShow] = useState(false);
