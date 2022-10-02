@@ -1,4 +1,8 @@
 let mysql = require('mysql')
+
+
+console.log(data);
+
 let con = mysql.createConnection({
         host: "127.0.0.1",
         user: "root",
@@ -6,21 +10,17 @@ let con = mysql.createConnection({
         database: "logowanie"
 });
 
-const insert = (query) => {
+const databaseQuery = (query) => {
     con.connect(function(err) {
         if (err) throw err;
         console.log("Connected!");
         // var sql = "INSERT INTO logowanie (imie, nazwisko) VALUES ('test1', 'test1')";
         con.query(query, function (err, result) {
             if (err) throw err;
-            console.log("1 record inserted");
+            console.log(result);
+            con.end();
         });
     });
 }
 
-class Database {
-    databaseInjection = (query) => {
-        insert(query)
-    } 
-}
-export default Database;
+databaseQuery("SELECT * FROM users")
