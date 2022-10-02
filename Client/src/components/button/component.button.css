@@ -1,0 +1,33 @@
+.nav-bar-button {
+    display: inline;
+    color: black !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    font-size: 17px !important;
+    height: fit-content !important;
+    width: 6rem !important;
+    vertical-align: middle !important;
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.6rem;
+}
+
+.nav-bar-left {
+    float: left;
+}
+
+@keyframes navbar {
+    from{background: white;}
+    to{background: rgb(30, 185, 233);}
+}
+
+.nav-bar-button:hover {
+    animation-name: navbar;
+    animation-duration: 0.35s;
+    background: rgb(30, 185, 233);
+}
+
+.btn-div {
+    height:3rem;
+    display: inline;
+    width: fit-content;
+}
