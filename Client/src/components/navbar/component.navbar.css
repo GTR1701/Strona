@@ -1,0 +1,28 @@
+.nav-bar {
+    overflow: hidden;
+    background: white;
+    width: 100vw;
+    height: 3rem !important;
+}
+.nav-bar-main {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-logo {
+    height: 3rem;
+}
+
+.nav-bar-right {
+    float: right;
+    margin-bottom: 0;
+}
+
+.login-div {
+    overflow: hidden;
+    background: white;
+    margin-bottom: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+}
