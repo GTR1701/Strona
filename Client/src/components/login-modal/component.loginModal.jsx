@@ -4,21 +4,8 @@ import Modal from 'react-bootstrap/Modal';
 import './component.loginModal.css'
 
 function LoginModal() {
-  const doForm = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.target);
-    // Access FormData fields with `data.get(fieldName)`
-    // For example, converting to upper case
-    data.set('username', data.get('username'));
-    data.append("login", document.getElementById("login").value);
-    data.append("password", document.getElementById("passwd").value);
-    console.log(data)
-  }
   const [show, setShow] = useState(false);
-  const handleClose = () => {
-    setShow(false);
-    doForm();
-  }
+  const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
 
@@ -41,7 +28,7 @@ function LoginModal() {
         </Modal.Header>
         <Modal.Body>
           <center>
-            <form id='login-form' className='login-form' action='../../services/database.js' onSubmit={this.doForm}>
+            <form id='login-form' className='login-form'>
               <label htmlFor="Login">Login</label><br></br>
               <input type="text" id='login' name='Login' /><br></br>
               <label htmlFor="passwd">Hasło</label><br></br>

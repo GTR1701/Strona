@@ -7,32 +7,32 @@ import Download from './pages/Download/download';
 import OFirmie from './pages/O-firmie/O_firmie';
 import Pomoc from './pages/Pomoc/Pomoc'
 import Kontakt from './pages/Kontakt/Kontakt'
-import {ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from} from '@apollo/client';
-import {onError} from '@apollo/client/link/error'
+// import {ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from} from '@apollo/client';
+// import {onError} from '@apollo/client/link/error'
 
-const errorLink = onError(({graphqlErrors, networkError}) => {
-  if (graphqlErrors) {
-    graphqlErrors.map(({message, location, path}) => {
-      alert(`Graphql error ${message}`)
-    })
-  }
-})
+// const errorLink = onError(({graphqlErrors, networkError}) => {
+//   if (graphqlErrors) {
+//     graphqlErrors.map(({message, location, path}) => {
+//       alert(`Graphql error ${message}`)
+//     })
+//   }
+// })
 
-const link = from([
-  errorLink,
-  new HttpLink({uri:"http://localhost:6969/graphql"})
-])
+// const link = from([
+//   errorLink,
+//   new HttpLink({uri:"http://localhost:6969/graphql"})
+// ])
 
-const client = new ApolloClient({
-  cache: InMemoryCache(),
-  link: link
-});
+// const client = new ApolloClient({
+//   cache: InMemoryCache(),
+//   link: link
+// });
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-  <ApolloClient client={client}>
+  // <ApolloClient client={client}>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />}/>
@@ -42,7 +42,7 @@ root.render(
         <Route path='/Kontakt' element={<Kontakt />}/>
       </Routes>
     </BrowserRouter>
-  </ApolloClient>
+  // </ApolloClient>
     
   // </React.StrictMode>
 );
