@@ -1,16 +1,32 @@
-import React, {useEffect} from 'react'
-import {useQuery, gql} from '@apollo/client'
-import {LOAD_USERS} from '../../graphql/Queries'
+import React, { useEffect, useState } from "react";
+import {getAllUsers} from '../../services/users-service';
+import Row from "../Row/Row.component";
+import './getUsers.component.css'
 
 function GetUsers() {
-    const {error, loading, data} = useQuery(LOAD_USERS)
-    useEffect(() => {
-        console.log(data);
-    }, [data]);
+  const [users, setUsers] = useState([]);
 
-    return (
-        <div>getUsers</div>
-    )
+  useEffect(async () => {
+    setUsers(await getAllUsers());
+  }, []);
+
+  return (
+    <table className="tabela">
+            {users.map((val) => {
+            console.log(val);
+            return [
+                <tr>
+                    <td>{val.ID}</td>
+                    <td>{val.Username}</td>
+                    <td>{val.Password}</td>
+                    <td>{val.zalogowany}</td>
+                </tr>
+            ]
+            })
+        }      
+    </table>
+      
+  );
 }
 
-export default GetUsers
+export default GetUsers;

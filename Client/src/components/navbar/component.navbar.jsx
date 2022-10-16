@@ -6,7 +6,6 @@ import LoginModal from '../login-modal/component.loginModal';
 
 const navbarApi = new NavbarApi();
 let ListOfContents = navbarApi.getBtnContents();
-// let getLoginBtn = navbarApi.getLoginBtn();
 
 function Navbar() {
     return ( 
