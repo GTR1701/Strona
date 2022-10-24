@@ -16,8 +16,13 @@
 }
 
 @keyframes navbar {
-    from{background: white;}
-    to{background: rgb(30, 185, 233);}
+    from {
+        background: white;
+    }
+
+    to {
+        background: rgb(30, 185, 233);
+    }
 }
 
 .nav-bar-button:hover {
@@ -27,7 +32,7 @@
 }
 
 .btn-div {
-    height:3rem;
+    height: 3rem;
     display: inline;
     width: fit-content;
 }

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import {getAllUsers} from '../../services/users-service';
-import Row from "../Row/Row.component";
-import './getUsers.component.css'
+import { getAllUsers } from "../../services/users-service";
+import "./getUsers.component.css";
 
 function GetUsers() {
   const [users, setUsers] = useState([]);
@@ -12,20 +11,18 @@ function GetUsers() {
 
   return (
     <table className="tabela">
-            {users.map((val) => {
-            console.log(val);
-            return [
-                <tr>
-                    <td>{val.ID}</td>
-                    <td>{val.Username}</td>
-                    <td>{val.Password}</td>
-                    <td>{val.zalogowany}</td>
-                </tr>
-            ]
-            })
-        }      
+      {users.map((val) => {
+        console.log(val);
+        return [
+          <tr>
+            <td>{val.ID}</td>
+            <td>{val.Username}</td>
+            <td>{val.Password}</td>
+            <td>{val.zalogowany}</td>
+          </tr>,
+        ];
+      })}
     </table>
-      
   );
 }
 
