@@ -14,11 +14,11 @@ function GetUsers() {
       {users.map((val) => {
         console.log(val);
         return [
-          <tr>
-            <td>{val.ID}</td>
-            <td>{val.Username}</td>
-            <td>{val.Password}</td>
-            <td>{val.zalogowany}</td>
+          <tr className="tabela">
+            <td className="tabela komorka">{val.ID}</td>
+            <td className="tabela komorka">{val.Username}</td>
+            <td className="tabela komorka">{val.Password}</td>
+            <td className="tabela komorka">{val.zalogowany}</td>
           </tr>,
         ];
       })}
