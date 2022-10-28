@@ -1,12 +1,28 @@
 .nav-bar {
     overflow: hidden;
     background: white;
-    width: 100vw;
     height: 3rem !important;
 }
+
 .nav-bar-main {
     display: flex;
-    justify-content: flex-start;
+    width: 100vw;
+    background: white;
+}
+
+@media (orientation: landscape) {
+    .nav-bar {
+        overflow: hidden;
+        height: 3rem !important;
+    }
+}
+
+@media (orientation: portrait) {
+    .nav-bar {
+        display: flex;
+        background: white;
+        height: 3rem !important;
+    }
 }
 
 .navbar-logo {
@@ -18,11 +34,8 @@
     margin-bottom: 0;
 }
 
-.login-div {
-    overflow: hidden;
-    background: white;
+.login-modal {
     margin-bottom: 0;
     padding: 0;
-    width: inherit;
-    height: inherit;
+    float: right;
 }
