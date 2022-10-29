@@ -1,31 +1,51 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+
 @keyframes login {
-    from{background: white;}
-    to{background: rgb(30, 185, 233);}
+    from {
+        background: white;
+    }
+
+    to {
+        background: rgb(30, 185, 233);
+    }
 }
 
-.login {
-    display: inline !important;
-    text-align: center !important;
-    text-decoration: none !important;
-    font-size: 17px !important;
-    width: 6rem !important;
-    height: 3rem !important;
-    padding-right: 0.6rem !important;
-    box-sizing: border-box !important;
-    border: 0 !important;
-    background-color: white !important;
-    color: black !important;
+@media (orientation: landscape) {
+    .login {
+        color: black !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        font-size: 17px !important;
+        height: fit-content !important;
+        width: 5rem !important;
+        vertical-align: middle !important;
+        padding-top: 0.8rem !important;
+        padding-bottom: 0.6rem;
+        cursor: pointer;
+        float: right;
+    }
+}
+
+@media (orientation: portrait) {
+    .login {
+        color: black !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        font-size: 17px !important;
+        height: fit-content !important;
+        width: 15vw !important;
+        vertical-align: middle !important;
+        padding-top: 0.8rem !important;
+        padding-bottom: 0.6rem;
+        cursor: pointer;
+        float: right;
+    }
 }
 
 .login:hover {
     animation-name: login !important;
     animation-duration: 0.35s !important;
     background: rgb(30, 185, 233) !important;
-}
-
-.nav-bar-left {
-    float: left;
 }
 
 .login-form {
@@ -35,4 +55,9 @@
 .login-btn {
     background-color: rgb(30, 185, 233);
     border: rgb(30, 185, 233);
+}
+
+.nav-bar-right {
+    margin-bottom: 0;
+    margin-left: auto;
 }
