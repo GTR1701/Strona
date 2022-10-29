@@ -10,9 +10,11 @@ function LoginModal() {
 
   return (
     <>
-      <button className="login" onClick={handleShow}>
-        Zaloguj
-      </button>
+      <div className="nav-bar-right">
+        <a className="login" onClick={handleShow}>
+          Zaloguj
+        </a>
+      </div>
 
       <Modal
         show={show}

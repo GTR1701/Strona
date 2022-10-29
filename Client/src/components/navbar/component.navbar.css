@@ -6,7 +6,6 @@
 
 .nav-bar-main {
     display: flex;
-    width: 100vw;
     background: white;
 }
 
@@ -19,19 +18,19 @@
 
 @media (orientation: portrait) {
     .nav-bar {
-        display: flex;
-        background: white;
+
         height: 3rem !important;
     }
 }
 
 .navbar-logo {
     height: 3rem;
+    float: left;
 }
 
 .nav-bar-right {
-    float: right;
     margin-bottom: 0;
+    float: right;
 }
 
 .login-modal {
