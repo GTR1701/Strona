@@ -1,5 +1,5 @@
 class NavbarApi {
-    constructor(){
+    constructor() {
         this.btnContents = [{
             id: 1,
             content: 'O firmie',
@@ -16,12 +16,6 @@ class NavbarApi {
             id: 4,
             content: 'Kontakt',
             href: '/Kontakt',
-        }];
-
-        this.loginBtn = [{
-            id: 6,
-            content: "Zaloguj",
-            href: ""
         }];
     }
     getBtnContents = () => {

@@ -1,8 +1,9 @@
-import "./component.navbar.css";
 import React from "react";
+import "./component.navbar.css";
 import NavButton from "../button/component.button";
 import NavbarApi from "../../services/navbar-api";
-import LoginModal from "../login-modal/component.loginModal";
+import LoginButton from "../LoginButton/LoginButton";
+import LogoutButton from "../LogoutButton/LogoutButton";
 
 const navbarApi = new NavbarApi();
 let ListOfContents = navbarApi.getBtnContents();
@@ -17,7 +18,8 @@ function Navbar() {
         <NavButton key={ListOfContents.id} content={btn} />
       ))}
       <div className="nav-bar-right">
-        <LoginModal />
+        <LoginButton />
+        <LogoutButton />
       </div>
     </div>
   );

@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./component.loginModal.css";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function LoginModal() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const { loginWithRedirect } = useAuth0();
 
   return (
     <>
@@ -38,12 +40,12 @@ function LoginModal() {
               <br></br>
               <br></br>
               {/* <Button variant="primary" className='login-btn' onClick={handleClose}>Zaloguj</Button><br></br> */}
-              <input
-                type="button"
-                value="Zaloguj"
+              <button
                 className="btn btn-primary login-btn"
-                onClick={handleClose}
-              />
+                onClick={() => loginWithRedirect()}
+              >
+                Zaloguj
+              </button>
             </form>
           </center>
         </Modal.Body>

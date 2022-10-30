@@ -5,11 +5,11 @@
         text-align: center !important;
         text-decoration: none !important;
         font-size: 17px !important;
-        height: fit-content !important;
+        height: 2.15rem !important;
         width: 5.5rem !important;
         vertical-align: middle !important;
-        padding-top: 0.8rem !important;
-        padding-bottom: 0.6rem;
+        padding-top: 0.85rem !important;
+        border: none;
     }
 }
 
@@ -32,6 +32,10 @@
     float: left;
 }
 
+.nav-bar-right {
+    margin-left: auto;
+}
+
 @keyframes navbar {
     from {
         background: white;
@@ -52,4 +56,5 @@
     height: 3rem;
     display: inline;
     width: fit-content;
+    cursor: pointer;
 }
