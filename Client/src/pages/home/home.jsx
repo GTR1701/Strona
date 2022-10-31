@@ -1,5 +1,4 @@
 import React from "react";
-import GetUsers from "../../components/getUsers/getUsers.component";
 import Navbar from "../../components/navbar/component.navbar";
 import "./home.css";
 
