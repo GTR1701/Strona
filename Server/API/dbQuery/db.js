@@ -4,17 +4,17 @@ const con = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "logowanie"
+  database: "serwis"
 });
 
-con.connect(function(err) {
+con.connect(function (err) {
   if (err) throw err;
   console.log("Connected")
 })
 
 const queryDatabase = async (connect, sql, params) => new Promise(
   (resolve, reject) => {
-    const handleFunction = (err,result) => {
+    const handleFunction = (err, result) => {
       if (err) {
         reject(err)
         return
@@ -25,4 +25,4 @@ const queryDatabase = async (connect, sql, params) => new Promise(
   }
 )
 
-module.exports = {con, queryDatabase}
+module.exports = { con, queryDatabase }

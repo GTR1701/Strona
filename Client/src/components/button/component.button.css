@@ -5,11 +5,11 @@
         text-align: center !important;
         text-decoration: none !important;
         font-size: 17px !important;
-        height: 2.15rem !important;
+        height: 3rem !important;
         width: 5.5rem !important;
         vertical-align: middle !important;
         padding-top: 0.85rem !important;
-        border: none;
+        border: none !important;
     }
 }
 
@@ -24,25 +24,25 @@
         width: 15vw !important;
         vertical-align: middle !important;
         padding-top: 0.8rem !important;
-        padding-bottom: 0.6rem;
+        padding-bottom: 0.6rem !important;
     }
 }
 
 .nav-bar-left {
-    float: left;
+    float: left !important;
 }
 
 .nav-bar-right {
-    margin-left: auto;
+    margin-left: auto !important;
 }
 
 @keyframes navbar {
     from {
-        background: white;
+        background: white !important;
     }
 
     to {
-        background: rgb(30, 185, 233);
+        background: rgb(30, 185, 233) !important;
     }
 }
 
@@ -53,8 +53,8 @@
 }
 
 .btn-div {
-    height: 3rem;
-    display: inline;
-    width: fit-content;
-    cursor: pointer;
+    height: 3rem !important;
+    display: inline !important;
+    width: fit-content !important;
+    cursor: pointer !important;
 }

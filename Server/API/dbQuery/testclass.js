@@ -4,7 +4,7 @@ class Controller {
     async getData(req, res) {
         const row = req.params
         if (row) {
-            const sql = `select * from users`
+            const sql = `select * from zgloszenia`
             const data = await queryDatabase(con, sql, [row])
             if (data) {
                 res.json({
