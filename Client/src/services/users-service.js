@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-const getAllUsers = async () => {
-    return await getFilteredUser("*");
+const getAllData = async () => {
+    return await getFilteredData("*");
 };
 
-const getFilteredUser = async (filter) => {
+const getFilteredData = async (filter) => {
     return await (await axios.get(`http://localhost:6969/test/${filter}`)).data.data;
 };
 
 export {
-    getFilteredUser,
-    getAllUsers
+    getFilteredData,
+    getAllData
 }
