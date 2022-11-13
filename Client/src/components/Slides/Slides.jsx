@@ -11,8 +11,8 @@ const Slideshow = () => {
   return (
     <div className="slide-container">
       <Fade>
-        {images.map((fadeImage, index) => (
-          <div className="each-fade" key={index}>
+        {images.map((fadeImage) => (
+          <div className="each-fade" key={fadeImage.id}>
             <div className="image-container">
               <img src={fadeImage.href} className="" />
             </div>
