@@ -31,7 +31,7 @@ function LoginModal({
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Logowanie</Modal.Title>
+          <Modal.Title>Szczegóły</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <center>
