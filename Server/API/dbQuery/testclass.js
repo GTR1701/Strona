@@ -3,7 +3,6 @@ const { con, queryDatabase } = require('./db')
 class Controller {
     async getData(req, res) {
         const row = req.params.query
-        console.log(row)
         if (row) {
             if (row == "*" || row == "") {
                 const sql = `SELECT * FROM zgloszenia`
@@ -15,7 +14,6 @@ class Controller {
                 }
             } else if (row != "*") {
                 let zapyt = `${row}`
-                let dlugosc = zapyt.length
                 let sql = `SELECT * FROM zgloszenia
                 WHERE (((((Id LIKE "${zapyt}%" OR Imie LIKE "${zapyt}%") OR Nazwisko LIKE "${zapyt}%") OR Firma LIKE "${zapyt}%") OR Rodzaj_zgloszenia LIKE "${zapyt}%") OR Tytul LIKE "${zapyt}%") OR Krotki_opis LIKE "${zapyt}*"`
                 const data = await queryDatabase(con, sql, [row])

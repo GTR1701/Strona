@@ -8,7 +8,6 @@ function GetData() {
   const [search, setSearch] = useState("*");
   useEffect(() => {
     (async () => {
-      console.log(search);
       let wynik = await getFilteredData(search);
       setUsers(wynik);
     })();
