@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getAllData, getFilteredData } from "../../services/users-service";
+import { getFilteredData } from "../../services/users-service";
 import LoginModal from "../login-modal/component.loginModal";
 import "./getData.css";
 
