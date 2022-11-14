@@ -30,26 +30,6 @@ class Controller {
             })
         }
     }
-
-    // async checkLogin(req, res) {
-    //     const query = req.params
-    //     console.log(query)
-    //     if (row) {
-    //         const sql = `SELECT Username, Password FROM users
-    //         WHERE Username LIKE(${query}) AND Password LIKE(${password})`
-    //         const data = await queryDatabase(con, sql, [row])
-    //         if (data) {
-    //             res.json({
-    //                 data: data
-    //             })
-    //         }
-    //     }
-    //     else {
-    //         res.json({
-    //             status: 'error'
-    //         })
-    //     }
-    // }
 }
 
 module.exports = new Controller
