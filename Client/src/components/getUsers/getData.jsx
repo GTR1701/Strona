@@ -1,24 +1,28 @@
 import React, { useEffect, useState } from "react";
-import { getAllData, getFilteredData } from "../../services/users-service";
+import { getFilteredData } from "../../services/users-service";
 import LoginModal from "../login-modal/component.loginModal";
 import "./getData.css";
 
 function GetData() {
   const [users, setUsers] = useState([]);
   const [search, setSearch] = useState("*");
-  console.log(search);
-  useEffect(async () => {
-    setUsers(await getFilteredData(search));
-  }, []);
+  useEffect(() => {
+    (async () => {
+      let wynik = await getFilteredData(search);
+      setUsers(wynik);
+    })();
+  }, [search]);
 
   return (
     <div>
-      <label htmlFor="Search">Wyszukaj: </label>
-      <input
-        type="text"
-        id="Search"
-        onChange={(event) => setSearch(event.target.value)}
-      />
+      <div className="szukanie">
+        <input
+          type="text"
+          id="Search"
+          onChange={(event) => setSearch(event.target.value)}
+          placeholder="Wyszukaj:"
+        />
+      </div>
       <table className="tabela">
         <tr>
           <td className="tabela komorka">Id</td>
