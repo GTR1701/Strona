@@ -12,16 +12,23 @@ const Slideshow = () => {
     <div className="slide-container">
       <Fade>
         {images.map((fadeImage) => (
-          <div className="each-fade" key={fadeImage.id}>
-            <div className="image-container">
-              <img src={fadeImage.href} className="" />
+          <div className="each" key={fadeImage.id}>
+            <div className="container">
+              <img src={fadeImage.href} className="image" />
+              <div class="layer">
+              </div>
             </div>
-            <h2>{fadeImage.text}</h2>
+              <div class="text-container">
+            <div class="centered"><h2>{fadeImage.text}</h2></div>
+            <div class="centered"><h3>{fadeImage.text2}</h3> </div>
+            </div>
           </div>
+        
         ))}
       </Fade>
     </div>
   );
 };
+
 
 export default Slideshow;
