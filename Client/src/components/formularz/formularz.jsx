@@ -3,43 +3,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 function Formularz(...props) {
-  // const [formValue, setformValue] = React.useState({
-  //   imie: "",
-  //   nazwisko: "",
-  //   email: "",
-  //   firma: "",
-  //   poczta: "",
-  //   ulica: "",
-  //   miasto: "",
-  //   tytul: "",
-  //   krotki: "",
-  //   opis: "",
-  //   regulamin: "",
-  //   opis: "",
-  // });
-
-  // const handleSubmit = async (event) => {
-  //   let formData = new FormData();
-  //   formData.append("Imie", formValue.imie);
-  //   console.log(formData);
-
-  //   try {
-  //     const response = await axios.post(
-  //       "http://localhost:6969/test/form",
-  //       formData
-  //     );
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-
-  // const handleChange = (event) => {
-  //   setformValue({
-  //     ...formValue,
-  //     [event.target.name]: event.target.value,
-  //   });
-  //   console.log(formValue);
-  // };
   const [imie, setImie] = useState("");
   const [nazwisko, setNazwisko] = useState("");
   const [email, setEmail] = useState("");
