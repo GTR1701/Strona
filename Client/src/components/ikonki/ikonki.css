@@ -1,0 +1,18 @@
+.each{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.App {
+    margin-left: auto;
+    margin-right: auto;
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td {
+    text-align: center;
+  }
