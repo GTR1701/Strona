@@ -1,0 +1,20 @@
+.label{
+    text-align: left !important;
+}
+.input{
+    padding: 5px !important;
+}
+
+div.formule{
+    padding: 1rem;
+    border: 5px solid rgb(30, 185, 233) !important;
+    margin-top: 3rem !important;
+    background-color: white;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    color: black !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 600px;
+}
+
