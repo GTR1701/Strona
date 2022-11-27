@@ -1,4 +1,4 @@
-let mysql = require('mysql')
+let mysql = require('mysql');
 
 const con = mysql.createConnection({
   host: "localhost",
@@ -25,4 +25,18 @@ const queryDatabase = async (connect, sql, params) => new Promise(
   }
 )
 
-module.exports = { con, queryDatabase }
+const insertInto = async (sql, connect) => new Promise(
+  (resolve, reject) => {
+    const handleFunction = (err, result) => {
+      if (err) {
+        reject(err)
+        return
+      }
+      console.log("1 record inserted");
+      resolve(result)
+    }
+    connect.query(sql, handleFunction)
+  }
+)
+
+module.exports = { con, queryDatabase, insertInto }

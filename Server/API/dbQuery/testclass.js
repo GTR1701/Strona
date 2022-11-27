@@ -1,4 +1,4 @@
-const { con, queryDatabase } = require('./db')
+const { con, queryDatabase, insertInto } = require('./db')
 
 class Controller {
     async getData(req, res) {
@@ -28,6 +28,20 @@ class Controller {
             res.json({
                 status: 'error'
             })
+        }
+    }
+
+    getFormData = async (req, res) => {
+        if (req) {
+            console.log(req.body)
+            const sql = `INSERT INTO zgloszenia (Data_zgloszenia, Data_zgloszenia_dokl, Imie, Nazwisko, Email, Firma, Ulica, Kod_pocztowy, Miasto, Rodzaj_zgloszenia, Tytul, Krotki_opis, Opis)
+            VALUES (NOW(), Current_time(), "${req.body.imie}", "${req.body.nazwisko}", "${req.body.email}", "${req.body.firma}", "${req.body.ulica}", "${req.body.poczta}", "${req.body.miasto}", "${req.body.usterka}", "${req.body.tytul}", "${req.body.krotki}", "${req.body.opis}");`
+            const data = await insertInto(sql, con)
+            if (data) {
+                res.json({
+                    data: data
+                })
+            }
         }
     }
 }
