@@ -1,24 +1,32 @@
-.label {
-  text-align: left !important;
+.label{
+    width: 12rem;
+    text-align: left;
+    padding-right: 4rem;
 }
-.input {
-  padding: 5px !important;
+.input{
+    text-align: center;
+
 }
 
-div.formule {
-  padding: 1rem;
-  border: 5px solid rgb(30, 185, 233) !important;
-  margin-top: 3rem !important;
-  background-color: white;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  color: black !important;
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 600px;
+.oddzielenie{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-.test-tabeli {
-  width: 50%;
-  height: 20rem;
+.guzik{
+    padding-bottom: 1.5rem;
 }
+
+.formule{
+    padding: 1rem;
+    border: 5px solid rgb(30, 185, 233) !important;
+    margin-top: 3rem !important;
+    background-color: white;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    color: black !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 600px;
+}
+

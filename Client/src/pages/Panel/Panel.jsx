@@ -11,6 +11,7 @@ function Panel({ ...props }) {
       <div id="Home">
         <Navbar key={101} />
         <GetData />
+        {/* <Profile /> */}
       </div>
     )
   );

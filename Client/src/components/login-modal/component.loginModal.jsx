@@ -2,7 +2,6 @@ import React, { useState } from "react";
 // import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./component.loginModal.css";
-import axios from "axios";
 
 function LoginModal({
   Id,
@@ -17,11 +16,6 @@ function LoginModal({
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const handleClick = () => {
-    console.log("Przyjmij zlecenie");
-    let response = axios.get(`http://localhost:6969/update/${Id}`);
-  };
-
   return (
     <>
       <div>
@@ -35,7 +29,6 @@ function LoginModal({
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
-        dialogClassName="rozmiar-modal"
       >
         <Modal.Header closeButton>
           <Modal.Title>Szczegóły</Modal.Title>
@@ -69,11 +62,6 @@ function LoginModal({
               <tr>
                 <td colSpan={2} className="srodek">
                   {Opis}
-                </td>
-              </tr>
-              <tr>
-                <td colSpan={2}>
-                  <button onClick={handleClick}>Przyjmij zlecenie</button>
                 </td>
               </tr>
             </table>

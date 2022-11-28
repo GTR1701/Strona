@@ -1,72 +1,69 @@
-.eachicon {
+.eachicon{
   margin-top: 4rem;
 }
 
-hr {
-  height: 2px;
-  border-width: 1;
-  color: white;
-  background-color: white;
+hr{
+  height:2px;
+  border-width:1;
+  color:white;
+  background-color:white;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
 }
-#linia {
+#linia{
   width: 80%;
 }
 
-.App {
-  margin: 8rem;
+.App{
+  
   margin-top: 12rem;
   color: rgb(30, 185, 233);
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   text-align: center;
   font-size: 5rem;
-  width: fit-content;
+  width: 80%;
 }
 
-tr > th {
+tr>th{
   position: relative;
   margin-top: 4rem;
   border: 5px !important;
   font-size: 6rem;
 }
 
-tr > td {
-  padding: 7rem;
+tr>td{
+  padding: 5rem;
   font-size: 1.5rem;
   color: black;
 }
 
-tr {
-  border: 5px solid rgb(30, 185, 233) !important;
+
+.opis1{
+  padding-top: 2.75rem;
+  text-align: center;
+  width: 16rem;
+  height: 16rem;
+  background-color: aliceblue;
+  border: 5px solid rgb(30, 185, 233);
 }
 
-.opis1 {
-  border: 5px solid rgb(30, 185, 233) !important;
-  background-color: white;
-  width: 3rem;
-  height: 5rem;
-  margin: 5px;
+.opis2{
+  padding-top: 1rem;
+  text-align: center;
+  width: 16rem;
+  height: 16rem;
+  background-color: aliceblue;
+  border: 5px solid rgb(30, 185, 233);
 }
 
-.opis2 {
-  border: 5px solid rgb(30, 185, 233) !important;
-  background-color: white;
-  width: 3rem;
-  height: 5rem;
-  margin: 5px;
-}
-.opis3 {
-  border: 5px solid rgb(30, 185, 233) !important;
-  background-color: white;
-  width: 3rem;
-  height: 5rem;
-  margin: 5px;
-}
-
-.miejsce {
-  border-spacing: 30px;
+.opis3{
+  padding-top: 3.75rem;
+  text-align: center;
+  width: 16rem;
+  height: 16rem;
+  background-color: aliceblue;
+  border: 5px solid rgb(30, 185, 233);
 }
