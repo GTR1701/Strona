@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
+import "./formularz.css";
 
 function Formularz(...props) {
   const [imie, setImie] = useState("");
@@ -39,7 +40,7 @@ function Formularz(...props) {
   };
 
   return (
-    <div>
+    <div className="formule">
       <center>
         <h1>Uzupełnij dane osobowe, aby kontynuować</h1> <br />
         <form onSubmit={handleSubmit} enctype="multipart/form-data">
