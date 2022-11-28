@@ -44,6 +44,19 @@ class Controller {
             }
         }
     }
+
+    recieve = async (req, res) => {
+        if (req) {
+            let id = req.params.query
+            const sql = `UPDATE zgloszenia SET Data_przyj_serwis=Current_time() WHERE Id = "${id}";`
+            const data = await insertInto(sql, con)
+            if (data) {
+                res.json({
+                    data: data
+                })
+            }
+        }
+    }
 }
 
 module.exports = new Controller
