@@ -44,78 +44,110 @@ function Formularz(...props) {
       <center>
         <h1>Uzupełnij dane osobowe, aby kontynuować</h1> <br />
         <form onSubmit={handleSubmit} enctype="multipart/form-data">
-          <label htmlFor="imie">Imię</label>
+          <label className="label" htmlFor="imie">
+            Imię
+          </label>
           <input
+            className="input"
             id="imie"
             type="text"
             name="imie"
             onChange={(event) => setImie(event.target.value)}
           />
           <br />
-          <label htmlFor="nazwisko">Nazwisko</label>
+          <label className="label" htmlFor="nazwisko">
+            Nazwisko
+          </label>
           <input
+            className="input"
             type="text"
             name="nazwisko"
             onChange={(event) => setNazwisko(event.target.value)}
           />
           <br />
-          <label htmlFor="E-mail">E-mail</label>
+          <label className="label" htmlFor="E-mail">
+            E-mail
+          </label>
           <input
+            className="input"
             type="text"
             name="E-mail"
             onChange={(event) => setEmail(event.target.value)}
           />
           <br />
-          <label htmlFor="Firma">Nazwa Firmy</label>
+          <label className="label" htmlFor="Firma">
+            Nazwa Firmy
+          </label>
           <input
+            className="input"
             type="text"
             name="Firma"
             onChange={(event) => setFirma(event.target.value)}
           />
           <br />
-          <label htmlFor="poczta">Kod pocztowy</label>
+          <label className="label" htmlFor="poczta">
+            Kod pocztowy
+          </label>
           <input
+            className="input"
             type="text"
             name="poczta"
             onChange={(event) => setPoczta(event.target.value)}
           />
           <br />
-          <label htmlFor="ulica">Ulica</label>
+          <label className="label" htmlFor="ulica">
+            Ulica
+          </label>
           <input
+            className="input"
             type="text"
             name="Ulica"
             onChange={(event) => setUlica(event.target.value)}
           />
           <br />
-          <label htmlFor="Miasto">Miasto</label>
+          <label className="label" htmlFor="Miasto">
+            Miasto
+          </label>
           <input
+            className="input"
             type="text"
             name="Miasto"
             onChange={(event) => setMiasto(event.target.value)}
           />
           <br />
-          <label htmlFor="Tytuł">Tytuł zgłoszenia</label>
+          <label className="label" htmlFor="Tytuł">
+            Tytuł zgłoszenia
+          </label>
           <input
+            className="input"
             type="text"
             name="Tytuł"
             onChange={(event) => setTytul(event.target.value)}
           />
           <br />
-          <label htmlFor="Krótki">Krótki opis</label>
+          <label className="label" htmlFor="Krótki">
+            Krótki opis
+          </label>
           <input
+            className="input"
             type="text"
             name="Krótki opis"
             onChange={(event) => setKrotki(event.target.value)}
           />
           <br />
-          <label htmlFor="Opis">Opis</label>
+          <label className="label" htmlFor="Opis">
+            Opis
+          </label>
           <input
+            className="input"
             type="text"
             name="Opis"
             onChange={(event) => setOpis(event.target.value)}
           />
           <br />
-          <label htmlFor="wybor">Rodzaj zgłoszenia</label>
+          <label className="move" htmlFor="wybor">
+            Rodzaj zgłoszenia
+          </label>
           <select
             id="wybor"
             name="usterka"
