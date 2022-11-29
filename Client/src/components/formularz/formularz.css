@@ -1,8 +1,12 @@
 .label {
-  text-align: left !important;
+  width: 12rem;
+  padding-right: 4rem;
+  text-align: left;
 }
-.input {
-  padding: 5px !important;
+
+.move {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 div.formule {

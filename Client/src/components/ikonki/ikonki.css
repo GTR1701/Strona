@@ -12,6 +12,7 @@ hr {
   margin-right: auto;
   margin-top: 3rem;
 }
+
 #linia {
   width: 80%;
 }
@@ -27,46 +28,41 @@ hr {
   width: fit-content;
 }
 
-tr > th {
+tr>th {
   position: relative;
   margin-top: 4rem;
   border: 5px !important;
   font-size: 6rem;
 }
 
-tr > td {
+tr>td {
   padding: 7rem;
   font-size: 1.5rem;
   color: black;
 }
 
-tr {
-  border: 5px solid rgb(30, 185, 233) !important;
-}
+
 
 .opis1 {
   border: 5px solid rgb(30, 185, 233) !important;
   background-color: white;
-  width: 3rem;
-  height: 5rem;
-  margin: 5px;
+  width: 16rem;
+  height: 16rem;
+  padding-top: 3rem;
 }
 
 .opis2 {
   border: 5px solid rgb(30, 185, 233) !important;
   background-color: white;
-  width: 3rem;
-  height: 5rem;
-  margin: 5px;
+  width: 16rem;
+  height: 16rem;
+  padding-top: 1rem;
 }
+
 .opis3 {
   border: 5px solid rgb(30, 185, 233) !important;
   background-color: white;
-  width: 3rem;
-  height: 5rem;
-  margin: 5px;
-}
-
-.miejsce {
-  border-spacing: 30px;
+  width: 16rem;
+  height: 16rem;
+  padding-top: 4rem;
 }
