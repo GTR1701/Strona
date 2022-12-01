@@ -23,30 +23,32 @@ function GetData() {
           placeholder="Wyszukaj:"
         />
       </div>
-      <table className="tabela">
+      <table className="tabela-panel">
         <tr>
-          <td className="tabela komorka">Id</td>
-          <td className="tabela komorka" colSpan={2}>
+          <td className="tabela-panel komorka-panel">Id</td>
+          <td className="tabela-panel komorka-panel" colSpan={2}>
             Zgłaszający
           </td>
-          <td className="tabela komorka">Firma</td>
-          <td className="tabela komorka">Rodzaj zgłoszenia</td>
-          <td className="tabela komorka">Tytuł zgłoszenia</td>
-          <td className="tabela komorka">Krótki opis</td>
-          <td className="tabela komorka">Szczegóły</td>
+          <td className="tabela-panel komorka-panel">Firma</td>
+          <td className="tabela-panel komorka-panel">Rodzaj zgłoszenia</td>
+          <td className="tabela-panel komorka-panel">Tytuł zgłoszenia</td>
+          <td className="tabela-panel komorka-panel">Krótki opis</td>
+          <td className="tabela-panel komorka-panel">Szczegóły</td>
         </tr>
         {users.map((val) => {
           // console.log(val);
           return [
-            <tr className="tabela">
-              <td className="tabela komorka">{val.Id}</td>
-              <td className="tabela komorka">{val.Imie}</td>
-              <td className="tabela komorka">{val.Nazwisko}</td>
-              <td className="tabela komorka">{val.Firma}</td>
-              <td className="tabela komorka">{val.Rodzaj_zgloszenia}</td>
-              <td className="tabela komorka">{val.Tytul}</td>
-              <td className="tabela komorka">{val.Krotki_opis}</td>
-              <td className="tabela komorka">
+            <tr className="tabela-panel">
+              <td className="tabela-panel komorka-panel">{val.Id}</td>
+              <td className="tabela-panel komorka-panel">{val.Imie}</td>
+              <td className="tabela-panel komorka-panel">{val.Nazwisko}</td>
+              <td className="tabela-panel komorka-panel">{val.Firma}</td>
+              <td className="tabela-panel komorka-panel">
+                {val.Rodzaj_zgloszenia}
+              </td>
+              <td className="tabela-panel komorka-panel">{val.Tytul}</td>
+              <td className="tabela-panel komorka-panel">{val.Krotki_opis}</td>
+              <td className="tabela-panel komorka-panel">
                 <LoginModal
                   Id={val.Id}
                   Imie={val.Imie}
@@ -55,6 +57,10 @@ function GetData() {
                   Rodzaj_zgloszenia={val.Rodzaj_zgloszenia}
                   Tytul={val.Tytul}
                   Opis={val.Opis}
+                  Data_zgl={val.Data_zgloszenia}
+                  Data_zgl_dok={val.Data_zgloszenia_dokl}
+                  Data_przyj={val.Data_przyj_serwis}
+                  Data_wysyl_do_kli={val.Data_wysyl_do_kli}
                 />
               </td>
             </tr>,

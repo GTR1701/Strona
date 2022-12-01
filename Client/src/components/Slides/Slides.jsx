@@ -14,21 +14,22 @@ const Slideshow = () => {
         {images.map((fadeImage) => (
           <div className="each" key={fadeImage.id}>
             <div className="container">
-              <img src={fadeImage.href} className="image" />
-              <div class="layer">
+              <img src={fadeImage.href} className="slajd-home" />
+              <div class="layer"></div>
+            </div>
+            <div class="text-container">
+              <div class="centered">
+                <h2>{fadeImage.text}</h2>
+              </div>
+              <div class="centered">
+                <h3>{fadeImage.text2}</h3>{" "}
               </div>
             </div>
-              <div class="text-container">
-            <div class="centered"><h2>{fadeImage.text}</h2></div>
-            <div class="centered"><h3>{fadeImage.text2}</h3> </div>
-            </div>
           </div>
-        
         ))}
       </Fade>
     </div>
   );
 };
-
 
 export default Slideshow;

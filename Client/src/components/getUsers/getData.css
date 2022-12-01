@@ -1,4 +1,4 @@
-.tabela {
+.tabela-panel {
   color: white;
   border: 1px solid;
   border-color: white;
@@ -6,9 +6,13 @@
   margin-right: auto;
 }
 
-.komorka {
+.komorka-panel {
   padding-right: 1rem;
   padding-left: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  width: fit-content;
+  height: fit-content;
 }
 
 .szukanie {

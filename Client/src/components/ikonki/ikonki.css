@@ -12,7 +12,6 @@ hr {
   margin-right: auto;
   margin-top: 3rem;
 }
-
 #linia {
   width: 80%;
 }
@@ -28,14 +27,14 @@ hr {
   width: fit-content;
 }
 
-tr>th {
+tr > th {
   position: relative;
   margin-top: 4rem;
   border: 5px !important;
   font-size: 6rem;
 }
 
-tr>td {
+.icon-text {
   padding: 7rem;
   font-size: 1.5rem;
   color: black;
@@ -58,7 +57,6 @@ tr>td {
   height: 16rem;
   padding-top: 1rem;
 }
-
 .opis3 {
   border: 5px solid rgb(30, 185, 233) !important;
   background-color: white;
@@ -66,3 +64,5 @@ tr>td {
   height: 16rem;
   padding-top: 4rem;
 }
+
+
