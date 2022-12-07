@@ -2,7 +2,7 @@
     "name": "graphql-express-migrating-mysql",
     "version": "1.0.0",
     "description": "",
-    "main": "app.js",
+    "main": "index.js",
     "scripts": {
         "start": "npm-run-all --parallel build:watch run:watch",
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
         "run": "node ./dist/app.js",
         "run:watch": "nodemon ./dist/app.js"
     },
-    "author": "Dirk H. Wolthuis",
+    "author": "Dawid Kowal",
     "license": "ISC",
     "dependencies": {
         "@babel/core": "^7.3.4",

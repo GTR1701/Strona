@@ -29,10 +29,7 @@ function Formularz(...props) {
     opis: opis,
     usterka: usterka,
   };
-  console.log(formData);
   const sendData = async (data) => {
-    console.log(formData);
-
     await axios.post("http://localhost:6969/form", data);
   };
   const handleSubmit = () => {
@@ -43,7 +40,7 @@ function Formularz(...props) {
     <div className="formule">
       <center>
         <h1>Uzupełnij dane osobowe, aby kontynuować</h1> <br />
-        <form onSubmit={handleSubmit} enctype="multipart/form-data">
+        <form onSubmit={handleSubmit}>
           <label className="label" htmlFor="imie">
             Imię
           </label>

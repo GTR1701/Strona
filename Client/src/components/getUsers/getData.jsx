@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getFilteredData } from "../../services/users-service";
 import LoginModal from "../login-modal/component.loginModal";
 import "./getData.css";
+import moment from "moment";
 
 function GetData() {
   const [users, setUsers] = useState([]);
@@ -9,9 +10,29 @@ function GetData() {
   useEffect(() => {
     (async () => {
       let wynik = await getFilteredData(search);
+      for (let poz of wynik) {
+        let przyj = poz.Data_zgloszenia;
+        console.log(przyj);
+        let przyj_dok = poz.Data_zgloszenia_dokl;
+        let serwis = poz.Data_przyj_serwis;
+        let wysyl = poz.Data_wysyl_do_kli;
+        if (przyj != null)
+          poz.Data_zgloszenia = przyj.slice(0, 19).replace("T", " ");
+        if (przyj_dok != null)
+          poz.Data_zgloszenia_dokl = przyj.slice(0, 19).replace("T", " ");
+        if (serwis != null)
+          poz.Data_przyj_serwis = przyj.slice(0, 19).replace("T", " ");
+        if (wysyl != null)
+          poz.Data_wysyl_do_kli = przyj.slice(0, 19).replace("T", " ");
+      }
+
       setUsers(wynik);
     })();
   }, [search]);
+
+  const convert = (wynik) => {
+    return wynik;
+  };
 
   return (
     <div>
@@ -29,10 +50,17 @@ function GetData() {
           <td className="tabela-panel komorka-panel" colSpan={2}>
             Zgłaszający
           </td>
+          <td className="tabela-panel komorka-panel">Data Zgłoszenia</td>
+          <td className="tabela-panel komorka-panel">
+            Data Przyjęcia Przez Serwis
+          </td>
+          <td className="tabela-panel komorka-panel">
+            Data Wysyłki Do Klienta
+          </td>
           <td className="tabela-panel komorka-panel">Firma</td>
-          <td className="tabela-panel komorka-panel">Rodzaj zgłoszenia</td>
-          <td className="tabela-panel komorka-panel">Tytuł zgłoszenia</td>
-          <td className="tabela-panel komorka-panel">Krótki opis</td>
+          <td className="tabela-panel komorka-panel">Rodzaj Zgłoszenia</td>
+          <td className="tabela-panel komorka-panel">Tytuł Zgłoszenia</td>
+          <td className="tabela-panel komorka-panel">Krótki Opis</td>
           <td className="tabela-panel komorka-panel">Szczegóły</td>
         </tr>
         {users.map((val) => {
@@ -42,6 +70,15 @@ function GetData() {
               <td className="tabela-panel komorka-panel">{val.Id}</td>
               <td className="tabela-panel komorka-panel">{val.Imie}</td>
               <td className="tabela-panel komorka-panel">{val.Nazwisko}</td>
+              <td className="tabela-panel komorka-panel">
+                {val.Data_zgloszenia}
+              </td>
+              <td className="tabela-panel komorka-panel">
+                {val.Data_przyj_serwis}
+              </td>
+              <td className="tabela-panel komorka-panel">
+                {val.Data_wysyl_do_kli}
+              </td>
               <td className="tabela-panel komorka-panel">{val.Firma}</td>
               <td className="tabela-panel komorka-panel">
                 {val.Rodzaj_zgloszenia}
