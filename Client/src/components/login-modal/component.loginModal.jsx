@@ -20,8 +20,12 @@ function LoginModal({
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const handleClick = () => {
-    let response = axios.get(`http://localhost:6969/update/${Id}`);
+  const handleClickPrzyj = () => {
+    if (Data_przyj == null) axios.get(`http://localhost:6969/update/${Id}`);
+  };
+  const handleClickWys = () => {
+    if (Data_przyj != null && Data_wysyl_do_kli == null)
+      axios.get(`http://localhost:6969/wys/${Id}`);
   };
 
   return (
@@ -61,27 +65,32 @@ function LoginModal({
               <td className="wart">
                 {Imie} {Nazwisko}
               </td>
+              <td className="daty">Data wysyłki do klienta: </td>
+              <td>{Data_wysyl_do_kli}</td>
             </tr>
             <tr>
               <td className="prawo">Firma: </td>
               <td className="wart">{Firma}</td>
             </tr>
             <tr>
-              <td colSpan={2} className="opis">
+              <td colSpan={4} className="opis">
                 {Tytul}
               </td>
             </tr>
             <tr>
-              <td colSpan={2} className="opis">
+              <td colSpan={4} className="opis">
                 {Opis}
               </td>
             </tr>
           </table>
-          <center>
-            <button onClick={handleClick} className="szczeg-btn">
+          <div className="przyj-div">
+            <button onClick={handleClickPrzyj} className="szczeg-btn login">
               Przyjmij zlecenie
             </button>
-          </center>
+            <button onClick={handleClickWys} className="szczeg-btn login">
+              Potwierdź wysłanie do klienta
+            </button>
+          </div>
         </Modal.Body>
         {/* <Modal.Footer>
         </Modal.Footer> */}
