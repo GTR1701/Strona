@@ -25,19 +25,19 @@ const IconShow = () => {
                 </th>
               </tr>
               <tr>
-                <td className="icon-text">
+                <td className="icon-text ramka">
                   <p className="opis1">
                     Współpraca z klientem jest jednym z najważniejszych aspektów
                     naszej firmy.
                   </p>
                 </td>
-                <td className="icon-text">
+                <td className="icon-text ramka">
                   <p className="opis2">
                     W naszym biurze obsługi klienta pomożemy ci bezstresowo
                     rozwiązać twój problem.
                   </p>
                 </td>
-                <td className="icon-text">
+                <td className="icon-text ramka">
                   <p className="opis3">
                     W zakładce pomoc można błyskawicznie zgłosić swój problem.
                   </p>

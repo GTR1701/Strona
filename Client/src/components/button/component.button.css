@@ -1,7 +1,7 @@
 @media (orientation: landscape) {
     .nav-bar-button {
         display: inline;
-        color: black;
+        color: black !important;
         text-align: center;
         text-decoration: none;
         font-size: 17px;
@@ -16,7 +16,7 @@
 @media (orientation: portrait) {
     .nav-bar-button {
         display: inline;
-        color: black;
+        color: black !important;
         text-align: center;
         text-decoration: none;
         font-size: 3vw;

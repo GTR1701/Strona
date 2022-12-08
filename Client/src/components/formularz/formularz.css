@@ -2,6 +2,12 @@
   width: 12rem;
   padding-right: 4rem;
   text-align: left;
+  margin: 2px;
+}
+
+.input {
+  margin: 2px;
+  width: 40vw;
 }
 
 .move {
@@ -18,11 +24,17 @@ div.formule {
   margin-right: auto !important;
   color: black !important;
   margin-top: 0;
-  margin-bottom: 0;
-  width: 600px;
+  margin-bottom: 10vh;
+  width: 90vw;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .test-tabeli {
   width: 50%;
   height: 20rem;
+}
+
+.opis {
+  height: 20vh;
 }
