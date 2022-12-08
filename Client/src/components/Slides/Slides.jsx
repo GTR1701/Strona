@@ -15,14 +15,14 @@ const Slideshow = () => {
           <div className="each" key={fadeImage.id}>
             <div className="container">
               <img src={fadeImage.href} className="slajd-home" />
-              <div class="layer"></div>
+              <div className="layer"></div>
             </div>
-            <div class="text-container">
-              <div class="centered">
-                <h2>{fadeImage.text}</h2>
+            <div className="text-container">
+              <div className="centered nag">
+                <h2 className="nag">{fadeImage.text}</h2>
               </div>
-              <div class="centered">
-                <h3>{fadeImage.text2}</h3>{" "}
+              <div className="centered tekst">
+                <h3 className="tekst">{fadeImage.text2}</h3>
               </div>
             </div>
           </div>

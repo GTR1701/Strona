@@ -11,10 +11,6 @@
   padding: 0;
 }
 
-.slajd-home {
-  width: 100vw;
-}
-
 .layer {
   background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
@@ -26,7 +22,6 @@
 
 .centered {
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -41,10 +36,52 @@ h2 {
 }
 
 h3 {
-  max-height: 500px;
-  width: 30vw;
-  margin-top: 12rem;
   font-family: "Lato", sans-serif;
   text-align: center;
   color: #282c34;
+}
+
+.nag {
+  top: 40%;
+}
+
+.tekst {
+  top: 60%;
+}
+
+@media (orientation: landscape) {
+  .nag {
+    font-size: 3vw;
+  }
+
+  .tekst {
+    font-size: 2vw;
+    width: 30vw;
+    margin-top: 2vw;
+    color: white;
+    text-shadow: 1px 1px 0 black;
+  }
+
+  .slajd-home {
+    height: 40vw;
+  }
+}
+
+@media (orientation: portrait) {
+  .nag {
+    font-size: 3vw;
+  }
+
+  .tekst {
+    font-size: 3vw;
+    width: 40vw;
+    margin-top: 2vw;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .slajd-home {
+    height: 60vh;
+    transform: translate(-25%, 0%);
+  }
 }
