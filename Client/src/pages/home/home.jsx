@@ -3,7 +3,6 @@ import Navbar from "../../components/navbar/component.navbar";
 import "./home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
 import Framer from "../../components/framer/framer";
 import Slideshow from "../../components/Slides/Slides";
 import IconShow from "../../components/ikonki/ikonki";

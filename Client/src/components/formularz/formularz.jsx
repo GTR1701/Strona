@@ -136,7 +136,7 @@ function Formularz(...props) {
             Opis
           </label>
           <input
-            className="input"
+            className="input opis"
             type="text"
             name="Opis"
             onChange={(event) => setOpis(event.target.value)}

@@ -5,7 +5,6 @@
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
-    display: flex;
     box-sizing: border-box;
     z-index: 100;
 }
@@ -26,6 +25,7 @@
 @media (orientation: portrait) {
     .nav-bar-main {
         height: 8vw;
+        width: 100%;
     }
 
     .navbar-logo {
