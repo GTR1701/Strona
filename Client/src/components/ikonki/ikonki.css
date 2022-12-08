@@ -12,6 +12,7 @@ hr {
   margin-right: auto;
   margin-top: 3rem;
 }
+
 #linia {
   width: 80%;
 }
@@ -23,46 +24,90 @@ hr {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   width: fit-content;
 }
 
-tr > th {
-  position: relative;
-  margin-top: 4rem;
-  border: 5px !important;
-  font-size: 6rem;
-}
-
-.icon-text {
-  padding: 7rem;
-  font-size: 1.5rem;
+tr>td {
+  padding: 10vw;
   color: black;
 }
 
+@media (orientation: landscape) {
+  .icon-text {
+    padding: 5vw;
+    font-size: 1.5vw;
+  }
 
+  tr>th {
+    position: relative;
+    margin-top: 4rem;
+    border: 5px !important;
+    font-size: 10vw;
+  }
 
-.opis1 {
-  border: 5px solid rgb(30, 185, 233) !important;
-  background-color: white;
-  width: 16rem;
-  height: 16rem;
-  padding-top: 3rem;
+  .opis1 {
+    border: 5px solid rgb(30, 185, 233) !important;
+    background-color: white;
+    width: 20vw;
+    height: fit-content;
+    padding-top: 6.5vw;
+    padding-bottom: 6.5vw;
+  }
+
+  .opis2 {
+    border: 5px solid rgb(30, 185, 233) !important;
+    background-color: white;
+    width: 20vw;
+    height: fit-content;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+
+  .opis3 {
+    border: 5px solid rgb(30, 185, 233) !important;
+    background-color: white;
+    width: 20vw;
+    height: fit-content;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+  }
 }
 
-.opis2 {
-  border: 5px solid rgb(30, 185, 233) !important;
-  background-color: white;
-  width: 16rem;
-  height: 16rem;
-  padding-top: 1rem;
-}
-.opis3 {
-  border: 5px solid rgb(30, 185, 233) !important;
-  background-color: white;
-  width: 16rem;
-  height: 16rem;
-  padding-top: 4rem;
-}
+@media (orientation: portrait) {
+  .icon-text {
+    padding: 0.2vw;
+    font-size: 3vw;
+  }
 
+  tr>th {
+    position: relative;
+    margin-top: 4rem;
+    border: 5px !important;
+    font-size: 20vw;
+  }
 
+  .opis1 {
+    border: 5px solid rgb(30, 185, 233) !important;
+    background-color: white;
+    width: 30vw;
+    height: fit-content;
+    padding: 4vw 1vw;
+  }
+
+  .opis2 {
+    border: 5px solid rgb(30, 185, 233) !important;
+    background-color: white;
+    width: 30vw;
+    height: fit-content;
+    padding: 4vw 1vw;
+  }
+
+  .opis3 {
+    border: 5px solid rgb(30, 185, 233) !important;
+    background-color: white;
+    width: 30vw;
+    height: fit-content;
+    padding: 5.8vw 1vw;
+  }
+}

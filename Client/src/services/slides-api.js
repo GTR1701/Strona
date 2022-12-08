@@ -4,9 +4,8 @@ class SlidesAPI {
             {
                 id: 1,
                 href: "https://hivescotland.co.uk/wp-content/uploads/2021/03/ultrawide-office-meeting.jpg",
-                text: "Wpółpraca z klientem", 
+                text: "Wpółpraca z klientem",
                 text2: "Wierzymy, że klient najlepiej zna swoje potrzeby, dlatego dopasujemy sprzęt do twojego trybu życia!",
-                
             },
             {
                 id: 2,

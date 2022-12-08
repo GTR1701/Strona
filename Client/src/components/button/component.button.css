@@ -1,48 +1,48 @@
 @media (orientation: landscape) {
     .nav-bar-button {
         display: inline;
-        color: black !important;
-        text-align: center !important;
-        text-decoration: none !important;
-        font-size: 17px !important;
-        height: 3rem !important;
-        width: 5.5rem !important;
-        vertical-align: middle !important;
-        padding-top: 0.85rem !important;
-        border: none !important;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        height: 3rem;
+        width: 5.5rem;
+        vertical-align: middle;
+        padding-top: 0.85rem;
+        border: none;
     }
 }
 
 @media (orientation: portrait) {
     .nav-bar-button {
         display: inline;
-        color: black !important;
-        text-align: center !important;
-        text-decoration: none !important;
-        font-size: 17px !important;
-        height: fit-content !important;
-        width: 15vw !important;
-        vertical-align: middle !important;
-        padding-top: 0.8rem !important;
-        padding-bottom: 0.6rem !important;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 3vw;
+        height: fit-content;
+        width: 15vw;
+        vertical-align: middle;
+        padding-top: 1.5vw;
+        padding-bottom: 0.6rem;
     }
 }
 
 .nav-bar-left {
-    float: left !important;
+    float: left;
 }
 
 .nav-bar-right {
-    margin-left: auto !important;
+    margin-left: auto;
 }
 
 @keyframes navbar {
     from {
-        background: white !important;
+        background: white;
     }
 
     to {
-        background: rgb(30, 185, 233) !important;
+        background: rgb(30, 185, 233);
     }
 }
 
@@ -53,8 +53,8 @@
 }
 
 .btn-div {
-    height: 3rem !important;
-    display: inline !important;
-    width: fit-content !important;
-    cursor: pointer !important;
+    height: 3rem;
+    display: inline;
+    width: fit-content;
+    cursor: pointer;
 }

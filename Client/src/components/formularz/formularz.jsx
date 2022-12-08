@@ -150,6 +150,7 @@ function Formularz(...props) {
             name="usterka"
             onChange={(event) => setUsterka(event.target.value)}
           >
+            <option value="">-- Wybierz typ --</option>
             <option value="uszkodzenie">Uszkodzenie</option>
             <option value="reklamacja">Reklamacja</option>
             <option value="zażalenie">Zażalenie</option>
