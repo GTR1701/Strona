@@ -11,7 +11,7 @@ function Home({ ...props }) {
   return (
     <div id="Home">
       <Navbar key={101} />
-      <motion.h1
+      <motion.div
         initial={{ y: 3000 }}
         animate={{ y: 0 }}
         transition={{ type: "slide", duration: 1 }}
@@ -25,7 +25,7 @@ function Home({ ...props }) {
         <div className="framer-container">
           <Framer />
         </div>
-      </motion.h1>
+      </motion.div>
     </div>
   );
 }

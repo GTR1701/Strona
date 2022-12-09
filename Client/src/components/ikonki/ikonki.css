@@ -15,6 +15,7 @@ hr {
 
 #linia {
   width: 80%;
+  margin-top: 20vw;
 }
 
 .App {
@@ -28,8 +29,7 @@ hr {
   width: fit-content;
 }
 
-tr>td {
-  padding: 10vw;
+.icon-text {
   color: black;
 }
 
@@ -39,7 +39,7 @@ tr>td {
     font-size: 1.5vw;
   }
 
-  tr>th {
+  .icon-image {
     position: relative;
     margin-top: 4rem;
     border: 5px !important;
@@ -83,7 +83,7 @@ tr>td {
     font-size: 3vw;
   }
 
-  tr>th {
+  .icon-image {
     position: relative;
     margin-top: 4rem;
     border: 5px !important;

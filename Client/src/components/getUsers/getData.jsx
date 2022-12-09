@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { getFilteredData } from "../../services/users-service";
 import LoginModal from "../login-modal/component.loginModal";
 import "./getData.css";
-import moment from "moment";
+import Daty from "../../services/date-format";
+
+const _Daty = new Daty();
 
 function GetData() {
   const [users, setUsers] = useState([]);
@@ -16,14 +18,11 @@ function GetData() {
         let przyj_dok = poz.Data_zgloszenia_dokl;
         let serwis = poz.Data_przyj_serwis;
         let wysyl = poz.Data_wysyl_do_kli;
-        if (przyj != null)
-          poz.Data_zgloszenia = przyj.slice(0, 19).replace("T", " ");
+        if (przyj != null) poz.Data_zgloszenia = _Daty.formatDate(przyj);
         if (przyj_dok != null)
-          poz.Data_zgloszenia_dokl = przyj.slice(0, 19).replace("T", " ");
-        if (serwis != null)
-          poz.Data_przyj_serwis = przyj.slice(0, 19).replace("T", " ");
-        if (wysyl != null)
-          poz.Data_wysyl_do_kli = przyj.slice(0, 19).replace("T", " ");
+          poz.Data_zgloszenia_dokl = _Daty.toDateTimestamp(przyj_dok);
+        if (serwis != null) poz.Data_przyj_serwis = _Daty.formatDate(serwis);
+        if (wysyl != null) poz.Data_wysyl_do_kli = _Daty.formatDate(wysyl);
       }
 
       setUsers(wynik);
@@ -35,7 +34,7 @@ function GetData() {
   };
 
   return (
-    <div>
+    <div className="tabels">
       <div className="szukanie">
         <input
           type="text"

@@ -3,3 +3,7 @@ body {
     margin: 0;
     background: #282C34;
 }
+
+.framer-container {
+    height: 20vh;
+}

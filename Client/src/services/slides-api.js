@@ -9,7 +9,7 @@ class SlidesAPI {
             },
             {
                 id: 2,
-                href: "https://img3.goodfon.com/original/1920x1080/2/53/office-workgroup-performance.jpg",
+                href: "https://www.truspace.ca/wp-content/uploads/2018/04/employees-from-workplace-1920x1251.jpg",
                 text: "Gwarancja satysfakcji",
                 text2: "Nasi klienci zyskują 12 miesieczną gwarancję na serwisowany sprzęt!",
             },
