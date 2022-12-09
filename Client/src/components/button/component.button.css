@@ -4,11 +4,11 @@
         color: black !important;
         text-align: center;
         text-decoration: none;
-        font-size: 17px;
-        height: 3rem;
-        width: 5.5rem;
+        font-size: 1.5vw;
+        height: 5vw;
+        width: 9vw;
         vertical-align: middle;
-        padding-top: 0.85rem;
+        padding-top: 1vw;
         border: none;
     }
 }
@@ -19,11 +19,11 @@
         color: black !important;
         text-align: center;
         text-decoration: none;
-        font-size: 3vw;
+        font-size: 2vw;
         height: fit-content;
         width: 15vw;
         vertical-align: middle;
-        padding-top: 1.5vw;
+        padding-top: 0.5vw;
         padding-bottom: 0.6rem;
     }
 }

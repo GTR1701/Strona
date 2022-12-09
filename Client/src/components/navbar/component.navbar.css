@@ -12,11 +12,11 @@
 @media (orientation: landscape) {
     .nav-bar-main {
         overflow: hidden;
-        height: 3rem;
+        height: 4vw;
     }
 
     .navbar-logo {
-        height: 3rem;
+        height: 4vw;
         float: left;
         padding: 1px;
     }
@@ -24,12 +24,12 @@
 
 @media (orientation: portrait) {
     .nav-bar-main {
-        height: 8vw;
+        height: 4vw;
         width: 100%;
     }
 
     .navbar-logo {
-        height: 8vw;
+        height: 4vw;
         float: left;
         padding: 1px;
     }

@@ -1,12 +1,10 @@
 .item {
-  min-height: 15rem;
-  min-width: 20rem;
-  padding: 20px;
+  padding: 5vw;
+  width: 20vw;
+  height: 45vh;
 }
 
 .item img {
-  width: 100%;
-  height: 100%;
   border-radius: 1.5rem;
   background: rgba(255, 255, 255, 0.3);
   pointer-events: none;
@@ -19,6 +17,7 @@
 .carousel {
   cursor: grab;
   overflow: hidden;
+  margin-top: 10vh;
 }
 
 .Framer {
@@ -26,13 +25,44 @@
 }
 
 .carousel-text {
-  font-size: 30px;
   color: rgb(30, 185, 233);
   text-align: center;
-  vertical-align: middle;
   position: absolute;
-  top: 45%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 5rem;
+  background-color: rgba(255, 255, 255, 0.563);
+}
+
+@media (orientation: landscape) {
+  .carousel-text {
+    width: 15vw;
+    font-size: 2vw;
+    top: 11vw;
+    margin-top: 25rem;
+  }
+
+  .item img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .item {
+    margin-top: 25rem;
+  }
+}
+
+@media (orientation: portrait) {
+  .carousel-text {
+    width: 20vw;
+    font-size: 3vw;
+    top: 12vw;
+  }
+
+  .item {
+    width: 30vw;
+    height: 45vh;
+  }
+
+  .item img {
+    width: 20vw;
+    height: 20vw;
+  }
 }
