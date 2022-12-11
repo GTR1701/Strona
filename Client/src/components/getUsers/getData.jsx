@@ -43,6 +43,7 @@ function GetData() {
           placeholder="Wyszukaj:"
         />
       </div>
+      <div className="tabela-container">
       <table className="tabela-panel">
         <tr>
           <td className="tabela-panel komorka-panel">Id</td>
@@ -103,6 +104,7 @@ function GetData() {
           ];
         })}
       </table>
+      </div>
     </div>
   );
 }

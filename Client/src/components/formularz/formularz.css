@@ -5,6 +5,10 @@
   margin: 2px;
 }
 
+.label-opis {
+  transform: translate(0%, -6.5rem);
+}
+
 .input {
   margin: 2px;
   width: 40vw;
@@ -13,6 +17,7 @@
 .move {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  padding-right: 2rem;
 }
 
 div.formule {
@@ -37,4 +42,19 @@ div.formule {
 
 .opis {
   height: 20vh;
+  text-align: right;
+}
+
+.regulamin {
+  color: blue;
+  cursor: pointer;
+}
+
+.regul-przyc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.klauzula {
+  text-align: justify;
 }
