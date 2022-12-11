@@ -9,6 +9,7 @@
 }
 
 .login {
+  float: left;
   vertical-align: middle;
   display: inline !important;
   text-align: center !important;
@@ -17,17 +18,12 @@
   width: fit-content !important;
   height: 2rem !important;
   box-sizing: border-box !important;
-  border: 0;
+  border: 1px solid rgb(30, 185, 233);
   background-color: white !important;
   color: black !important;
   border-radius: 6px;
 }
 
-.login:hover {
-  animation-name: login !important;
-  animation-duration: 0.35s !important;
-  background: rgb(30, 185, 233) !important;
-}
 
 .nav-bar-left {
   float: left;
@@ -63,13 +59,10 @@ body {
 }
 
 .rozmiar-modal {
-  width: 50%;
+  width: 75%;
   max-width: 100%;
 }
 
-.opis {
-  text-align: center;
-}
 
 .daty {
   padding-left: 3.5rem;
@@ -91,6 +84,26 @@ body {
 .przyj-div {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
+}
+
+.detail-container {
+  border: 5px solid rgb(30, 185, 233);
+  border-radius: 0.5rem;
+}
+
+.border-class {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.opis1 {
+  height: 3vw;
+}
+
+.opis_lewo {
+  text-align: left;
+  transform: translate(0%, -35%);
 }
